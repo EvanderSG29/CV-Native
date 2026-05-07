@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="CV online Evander Smid Gidion - student and web developer portfolio." data-i18n="meta-description" />
+  <link rel="icon" href="favicon.png" type="image/png" />
   <title data-i18n="title">CV - Evander Smid Gidion</title>
   <style>
     :root {
@@ -44,14 +45,14 @@
     }
 
     .page {
-      max-width: 1100px;
+      max-width: 1250px;
       margin: 0 auto;
       padding: 32px 18px;
     }
 
     .cv {
       display: grid;
-      grid-template-columns: 320px 1fr;
+      grid-template-columns: 350px 1fr;
       gap: 22px;
     }
 
@@ -79,7 +80,7 @@
       height: 116px;
       border-radius: 50%;
       border: 3px solid var(--line);
-      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      background: linear-gradient(135deg, var(--accent), #ececec);
       display: block;
       object-fit: cover;
       overflow: hidden;
@@ -312,10 +313,10 @@
 <body>
   <main class="page">
     <div class="cv">
-      <aside class="sidebar" aria-label="Informasi profil">
+      <aside class="sidebar" aria-label="Informasi profil"> 
         <img class="avatar" src="foto_evandersg.jpg" alt="Foto Evander Smid Gidion">
         <h1>Evander Smid Gidion</h1>
-        <p class="username">EvanderSG29 · he</p>
+        <p class="username" data-i18n="user-pronoun">Dia</p>
         <p class="role" data-i18n="role">Student · Junior Web Developer</p>
         <p class="summary" data-i18n="summary">
           Student at Wikrama 1 Garut Vocational School who is learning software development through hands-on web projects.
@@ -368,7 +369,7 @@
           <h2 data-i18n="education">Pendidikan</h2>
           <article class="item">
             <h3>Wikrama 1 Garut Vocational School</h3>
-            <p class="meta">Student · Garut, Indonesia</p>
+            <p class="meta" data-i18n="education-role">Student · Garut, Indonesia</p>
             <p data-i18n="education-desc">
               Learning web development fundamentals, programming logic, database basics, and practical project development.
             </p>
@@ -393,7 +394,7 @@
           <article class="item">
             <h3>NYUCI.ID - Laundry Management System</h3>
             <p class="meta">Laravel · PHP · MySQL · Blade · JavaScript · QRIS Payment Flow</p>
-            <p>
+            <p data-i18n="project-nyuci-desc">
               Aplikasi manajemen laundry berbasis Laravel untuk mengelola pelanggan, jasa, order, pembayaran, checkout QRIS, dashboard analytics, dan notifikasi.
             </p>
             <a class="project-link" href="https://github.com/EvanderSG29/nyuci.id" data-i18n="view-project">Lihat proyek</a>
@@ -401,7 +402,7 @@
           <article class="item">
             <h3>CoinKu - Personal Finance Tracker</h3>
             <p class="meta">Laravel 12 · Bootstrap · AdminLTE · SQLite/MySQL · Chart.js · AJAX</p>
-            <p>
+            <p data-i18n="project-coinku-desc">
               Aplikasi pencatatan keuangan personal dengan dashboard, CRUD kategori, CRUD transaksi, statistik pemasukan/pengeluaran, dan visualisasi chart.
             </p>
             <a class="project-link" href="https://github.com/EvanderSG29/CoinKuPencatatanKeuangan" data-i18n="view-project">Lihat proyek</a>
@@ -409,7 +410,7 @@
           <article class="item">
             <h3>KanSor - Offline-first School Canteen POS</h3>
             <p class="meta">Laravel 12 · NativePHP/Electron · SQLite/MySQL · Google Apps Script · Pest</p>
-            <p>
+            <p data-i18n="project-kansor-desc">
               Aplikasi POS kantin sekolah berbasis desktop-native dengan mode offline, sinkronisasi manual, outbox, conflict resolution, dan target build Windows.
             </p>
             <a class="project-link" href="https://github.com/EvanderSG29/KanSor" data-i18n="view-project">Lihat proyek</a>
@@ -419,20 +420,20 @@
         <section class="section">
           <h2 data-i18n="certifications">Sertifikasi</h2>
           <article class="item">
-            <h3>Memulai Pemrograman dengan Python</h3>
+            <h3 data-i18n="cert-python-title">Memulai Pemrograman dengan Python</h3>
             <p class="meta">Dicoding Indonesia · Dec 3, 2024</p>
-            <p data-i18n="cert-desc">
+            <p data-i18n="cert-python-desc">
               Sertifikat Dicoding yang menunjukkan pemahaman dasar pemrograman Python untuk pemula.
             </p>
-            <a class="project-link" href="https://www.dicoding.com/certificates/EYX4J5W16ZDL">Lihat sertifikat</a>
+            <a class="project-link" href="https://www.dicoding.com/certificates/EYX4J5W16ZDL" data-i18n="view-certificate">Lihat sertifikat</a>
           </article>
           <article class="item">
-            <h3>Belajar Dasar Visualisasi Data</h3>
+            <h3 data-i18n="cert-data-title">Belajar Dasar Visualisasi Data</h3>
             <p class="meta">Dicoding Indonesia · Nov 17, 2024</p>
-            <p>
+            <p data-i18n="cert-data-desc">
               Sertifikat Dicoding tentang penggunaan alat visualisasi data untuk membuat laporan yang mudah dipahami.
             </p>
-            <a class="project-link" href="https://www.dicoding.com/certificates/0LZ04N65QP65">Lihat sertifikat</a>
+            <a class="project-link" href="https://www.dicoding.com/certificates/0LZ04N65QP65" data-i18n="view-certificate">Lihat sertifikat</a>
           </article>
         </section>
 
@@ -450,6 +451,7 @@
         'profile': 'Profil Singkat',
         'profile-text': 'Saya adalah siswa dari sekolah kejuruan yang fokus meningkatkan keterampilan pengembangan perangkat lunak melalui pembelajaran berkelanjutan dan proyek nyata. Saya tertarik pada pengembangan web full-stack, khususnya membangun situs web sederhana, berguna, dan responsif menggunakan HTML, CSS, JavaScript, PHP/Laravel, Node.js, SQLite, dan MySQL.',
         'education': 'Pendidikan',
+        'education-role': 'Siswa · Garut, Indonesia',
         'education-desc': 'Belajar dasar-dasar pengembangan web, logika pemrograman, dasar database, dan pengembangan proyek praktis.',
         'learning-focus': 'Fokus Belajar',
         'learning-list': [
@@ -459,7 +461,16 @@
         ],
         'projects': 'Proyek',
         'view-project': 'Lihat proyek',
+        'view-certificate': 'Lihat sertifikat',
         'certifications': 'Sertifikasi',
+        'cert-python-title': 'Memulai Pemrograman dengan Python',
+        'cert-python-desc': 'Sertifikat Dicoding yang menunjukkan pemahaman dasar pemrograman Python untuk pemula.',
+        'cert-data-title': 'Belajar Dasar Visualisasi Data',
+        'cert-data-desc': 'Sertifikat Dicoding tentang penggunaan alat visualisasi data untuk membuat laporan yang mudah dipahami.',
+        'project-nyuci-desc': 'Aplikasi manajemen laundry berbasis Laravel untuk mengelola pelanggan, jasa, order, pembayaran, checkout QRIS, dashboard analytics, dan notifikasi.',
+        'project-coinku-desc': 'Aplikasi pencatatan keuangan personal dengan dashboard, CRUD kategori, CRUD transaksi, statistik pemasukan/pengeluaran, dan visualisasi chart.',
+        'project-kansor-desc': 'Aplikasi POS kantin sekolah berbasis desktop-native dengan mode offline, sinkronisasi manual, outbox, conflict resolution, dan target build Windows.',
+        'user-pronoun': 'Dia',
         'cert-desc': 'Tulis 1-3 sertifikasi yang paling relevan dengan web development. Untuk daftar lengkap, arahkan pembaca ke LinkedIn.',
         'email': 'Email: ',
         'github': 'GitHub: ',
@@ -477,6 +488,7 @@
         'profile': 'Short Profile',
         'profile-text': 'I am a vocational school student focused on improving my software development skills through continuous learning and real projects. I am interested in full-stack web development, especially building simple, useful, and responsive websites using HTML, CSS, JavaScript, PHP/Laravel, Node.js, SQLite, and MySQL.',
         'education': 'Education',
+        'education-role': 'Student · Garut, Indonesia',
         'education-desc': 'Learning web development fundamentals, programming logic, database basics, and practical project development.',
         'learning-focus': 'Learning Focus',
         'learning-list': [
@@ -486,7 +498,16 @@
         ],
         'projects': 'Projects',
         'view-project': 'View project',
+        'view-certificate': 'View certificate',
         'certifications': 'Certifications',
+        'cert-python-title': 'Getting Started with Programming in Python',
+        'cert-python-desc': 'A Dicoding certificate that demonstrates basic Python programming understanding for beginners.',
+        'cert-data-title': 'Learning Data Visualization Basics',
+        'cert-data-desc': 'A Dicoding certificate about using data visualization tools to create easy-to-understand reports.',
+        'project-nyuci-desc': 'A Laravel-based laundry management application for customers, services, orders, payments, QRIS checkout, dashboard analytics, and notifications.',
+        'project-coinku-desc': 'A personal finance tracking application with dashboard, category CRUD, transaction CRUD, income/expense statistics, and chart visualizations.',
+        'project-kansor-desc': 'A school canteen POS desktop-native application with offline mode, manual synchronization, outbox, conflict resolution, and Windows build target.',
+        'user-pronoun': 'He',
         'cert-desc': 'Write 1-3 certifications most relevant to web development. For the complete list, direct readers to LinkedIn.',
         'email': 'Email: ',
         'github': 'GitHub: ',
